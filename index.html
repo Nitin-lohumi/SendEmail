@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emailSend</title>
+</head>
+<body>
+    <h1>send Email</h1>
+<form >
+    <input type="name" placeholder="Enter your name" id="name" required>
+
+    <input type="email" placeholder="Enter your email" id="email" required>
+
+    <input type="=text" placeholder="Enter your message" id="message" required>
+
+    <input type="submit" value="send" onclick="mail()">
+
+</form>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "2r1JC2IVFp0MDG2DP",
+      });
+   })();
+</script>
+</body>
+<script src="script.js"></script>
+</html>
